@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if gte mso 9]>
+            <xml>
+                <o:OfficeDocumentSettings>
+                    <o:AllowPNG />
+                    <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        <![endif]--><!--[if gt mso 15]>
+            <style type="text/css" media="all">
+                /* Outlook 2016 Height Fix */
+                table, tr, td {border-collapse: collapse;}
+                tr { font-size:0px; line-height:0px; border-collapse: collapse;}
+            </style>
+        <![endif]--><!--[if (gt mso 9)|(IE)]>
+            <style type="text/css" media="all">
+                table {border-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactly; mso-margin-top-alt: 0; mso-margin-bottom-alt: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
+            </style>
+        <![endif]--><!--[if mso]>
+            <style type="text/css">
+                sup { font-size: 90% !important; vertical-align: top !important;}
+                sub { font-size: 90% !important; vertical-align: top !important;}
+            </style>
+        <![endif]-->
+<title></title>
+<!--[if !mso]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]--><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark">
+<style type="text/css">#outlook a {
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+</style>
+<!--[if mso]>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <style type="text/css">
+            table { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+            .mj-outlook-group-fix { width:100% !important; }
+            .button-container a {background: transparent !important;}
+        </style>
+    <![endif]-->
+<style type="text/css">:root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+         }
+     
+     
+a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        .appleLinks a {
+            color: #343434;
+            text-decoration: none;
+        }
+
+        body a {
+            text-decoration: none;
+            color: #0068A5;
+        }
+
+        sup {
+            line-height: 0;
+            font-size: 60%;
+        }
+
+        @media screen and (max-width:599px) {
+            .em_main_table {
+                width: 400px !important;
+                max-width: 400px !important;
+            }
+
+            .em_img_logo {
+                width: 55px !important;
+                height: auto !important;
+                max-width: none !important;
+            }
+
+            .em_full_img {
+                width: 100% !important;
+                height: auto !important;
+                max-width: none !important;
+            }
+
+            .em_spec_img {
+                width: auto !important;
+                height: 39px !important;
+                max-width: none !important;
+            }
+
+            .em_wrapper {
+                width: 100% !important;
+            }
+
+            .em_aside_0 {
+                padding: 0 !important;
+            }
+
+            .em_aside {
+                padding: 0 24px !important;
+            }
+
+            .em_txt_5_22 {
+                font-size: 5px !important;
+                line-height: 6px !important;
+            }
+
+            .m0auto {
+                margin: 0 auto !important;
+            }
+
+            .em_show-line {
+                display: initial !important;
+                visibility: visible !important;
+            }
+
+            .em_show {
+                display: block !important;
+                max-height: none !important;
+                visibility: visible !important;
+            }
+
+            .em_hide {
+                display: none !important;
+                width: 0px !important;
+                visibility: hidden !important;
+            }
+
+            .em_left {
+                text-align: left !important;
+            }
+
+            .em_center {
+                text-align: center !important;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+    .light {
+        display: none !important;
+        visibility: hidden !important;
+      }
+
+     .dark {
+        display: block !important;
+        visibility: visible !important;
+      }
+    
+     .DMwhitetext {
+        color: #ffffff !important;
+      }
+
+    .DMgreentext {
+        color: #95FF0F !important;
+      }
+     
+      .DMdarktext {
+        color: #020708 !important;
+      }
+    
+     .DMdefback {
+        background-color: #071518 !important;
+      }
+    
+     .DMblockback {
+       background-color: #091C20 !important;
+      }
+   
+     .DMbutton {
+       background-color: #95FF0F !important;
+       color: #020708 !important;
+      }
+     
+     .DMgraytext {
+       color: #B9C6CB !important;
+      }
+
+     .dark-td {
+        display: table-cell !important;
+        visibility: visible !important;
+      }
+
+     .dark-table {
+        display: table !important;
+        visibility: visible !important;
+      }
+  
+  [data-ogsc] .light {
+        display: none !important;
+        visibility: hidden !important;
+      }
+
+  [data-ogsc] .dark {
+        display: block !important;
+        visibility: visible !important;
+      }
+
+  [data-ogsc] .dark-td {
+        display: table-cell !important;
+        visibility: visible !important;
+      }
+
+  [data-ogsc] .dark-table {
+        display: table !important;
+        visibility: visible !important;
+      }
+  
+  [data-ogsb] .DMwhitetext {
+        color: #ffffff !important;
+      }
+
+    [data-ogsb] .DMgreentext {
+        color: #95FF0F !important;
+      }
+
+  [data-ogsb] .DMdarktext {
+        color: #020708 !important;
+      }
+    
+  [data-ogsb] .DMdefback {
+        background-color: #071518 !important;
+      }
+    
+  [data-ogsb] .DMblockback {
+       background-color: #091C20 !important;
+      }
+   
+  [data-ogsb] .DMbutton {
+       background-color: #95FF0F !important;
+      }
+   
+  [data-ogsb] .DMgraytext {
+       color: #B9C6CB !important;
+      }
+  }
+</style>
+<!--[if gte mso 9]>
+<style>
+sup {font-size: 120% !important; vertical-align:2px; }
+</style>
+<![endif]--><!--[if mso]>
+    <style type="text/css">
+    body, table, td {font-family: 'Figtree light', Arial, Helvetica, sans-serif !important;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" style="min-width:100%" width="100%">
+    <tbody>
+        <tr>
+            <td align="center" style="vertical-align:top; font-size:0; background-color:#071518; padding: 0;"><!--[if (gte mso 9)|(IE)]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                    <tr>
+                        <td align="center" valign="top" width="600" style="width:600px;">
+                            <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="deviceWidth" style="width:100%; max-width:600px" width="100%">
+                                            <tr>
+                                                <td align="center">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper DMwhitetext" style="width:100%;background-color:#1c2b30;">
+                                                        <tr>
+                                                            <td class="DMwhitetext" style="padding:0; vertical-align:top;">
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tr>
+                                                                        <td align="center" valign="top"><a href="https://www.thinkcapital.com" target="_blank"><img alt="ThinkCapital Hero" class="em_full_img" height="auto" src="https://thinkcapital.saphyteapi.com/docs/media/images/_-02.png" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:600px;" width="600" /></a></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" class="DMwhitetext" style="padding: 0 20px; background-color:#1c2b30;">
+                                                    <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="520" style="width:520px;">
+                                                            <tr>
+                                                                <td align="center" valign="top" width="520" style="width:520px;">
+                                                                    <![endif]-->
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="deviceWidth DMwhitetext" style="max-width:520px" width="100%">
+                                                                            <tr>
+                                                                                <td align="left" class="DMwhitetext" style="padding: 0; font-family: 'Figtree', sans-serif; font-size:18px; line-height:24px; color:#ffffff; font-weight:normal;" valign="top"><b>Dear Customer,</b></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="16" style="font-size:16px; line-height:16px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" class="DMwhitetext" style="padding: 0; font-family: 'Figtree', sans-serif; font-size:14px; line-height:20px; color:#d4d4d4; font-weight:normal;" valign="top">We are excited to introduce our new product line. Explore the latest features and innovations that can help you achieve more.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" style="font-size:0; padding:0;">
+                                                                                    <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext em_wrapper" style="background-color:#84db15; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;" width="135">
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" height="40" style="-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; color: #071518; display: block; vertical-align:middle; padding: 0 32px;"><a class="DMdarktext" href="https://web.thinktrader.com/account/login" style="color: #071518; font-size:14px; font-weight: 600; font-family: 'Figtree', Arial, sans-serif; text-decoration: none; line-height:40px; width:100%; display:inline-block; white-space:nowrap;" target="_blank">Learn More</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" class="DMwhitetext" style="padding: 0; font-family: 'Figtree', sans-serif; font-size:14px; line-height:20px; color:#d4d4d4; font-weight:normal;" valign="top">We are excited to introduce our new product line. Explore the latest features and innovations that can help you achieve more.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" style="font-size:0; padding:0; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; background-color: #071518;">
+                                                                                    <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext em_wrapper" width="100%">
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="border: 1px solid #84db15; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:18px; line-height:24px; color:#ffffff; font-weight:normal;"><b>1ST</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:18px; line-height:24px; color:#FFE500; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:18px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$400K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>2ND</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#C5F308; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$200K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>3RD</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#95FF0F; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$100K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>4TH</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#84db15; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$100K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>5TH</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#84db15; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$50K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>6TH</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#84db15; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$50K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>7TH</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#84db15; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$25K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>8TH</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#84db15; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$25K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>9TH</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#84db15; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$25K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" style="font-size:0; padding: 0 20px;">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" style="color: #ffffff; vertical-align:middle; padding: 0 24px;">
+                                                                                                <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext" width="100%">
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" width="10%" style="width: 10%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>10TH</b></td>
+                                                                                                        <td align="left" width="60%" style="width: 60%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#84db15; font-weight:normal;"><b>PRIZE</b></td>
+                                                                                                        <td align="center" width="30%" style="width: 30%; padding: 0; font-family: 'Figtree', sans-serif; font-size:16px; line-height:24px; color:#ffffff; font-weight:normal;"><b>$25K</b></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="3" height="10" style="font-size:10px; line-height:10px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="16" style="font-size:16px; line-height:16px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="DMwhitetext" style="padding: 0; font-family: 'Figtree', sans-serif; font-size:18px; line-height:24px; color:#ffffff; font-weight:normal;" valign="top"><b>Overtrading Will Not Give You Good Returns</b></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="16" style="font-size:16px; line-height:16px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" class="DMwhitetext" style="padding: 0 0 16px 0; font-family: 'Figtree', sans-serif; font-size:14px; line-height:20px; color:#d4d4d4; font-weight:normal;" valign="top">In the next installment of our series on successful ThinkCapital Traders, we feature a trader who diversified trades between gold and US indices. Early on, they realized that overtrading was not the key to achieving long-term profits.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="16" style="font-size:16px; line-height:16px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" style="font-size:0; padding:0;">
+                                                                                    <table align="center" cellpadding="0" cellspacing="0" class="DMdarktext em_wrapper" style="background-color:#84db15; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;" width="135">
+                                                                                        <tr>
+                                                                                            <td align="center" class="DMdarktext" height="40" style="-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; color: #071518; display: block; vertical-align:middle; padding: 0 32px;"><a class="DMdarktext" href="https://web.thinktrader.com/account/login" style="color: #071518; font-size:14px; font-weight: 600; font-family: 'Figtree', Arial, sans-serif; text-decoration: none; line-height:40px; width:100%; display:inline-block; white-space:nowrap;" target="_blank">Explore more</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                                </td>
+                                                             </tr>
+                                                        </table>
+                                                    <![endif]-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" style="font-size:0" valign="top">
+                                                <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" role="presentation" style="min-width: 100%; " width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="stylingblock-content-wrapper camarker-inner">
+                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="background-position:center center;background-size:contain;background-repeat:no-repeat;width:100%;background-color:#071518;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="background-position:center center;background-size:contain;background-repeat:no-repeat;width:600px; max-width:600px;background:#1c2b30;">
+                                                                                <tr>
+                                                                                    <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="padding: 0 20px;" align="center">
+                                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="-webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; background-position:center center;background-size:contain;background-repeat:no-repeat;width:100%;background:#071518;">
+                                                                                            <tr>
+                                                                                                <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="center" class="em_aside" style="font-family: 'Inter', Arial, sans-serif; font-size:22px;line-height: 30px; font-weight: 600; color:#a0abaf; padding: 0 40px;">Follow us on socials!</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="18" style="font-size:18px; line-height:18px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0; vertical-align:top;">
+                                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 224px;" width="224">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td width="24" height="24" align="center" class="DMwhitetext" style="padding: 0 10px;" valign="top"><a href="https://x.com/thinkcapitalcom" style="color: #ffffff; text-decoration: none;" target="_blank"><img alt="X" height="24" src="https://image.email.thinkmarkets.com/lib/fe3411727364047f701073/m/1/b331f947-13f1-414e-94f1-41000ba3456d.png" style="border:none;display:block;outline:none;text-decoration:none;height:24px;font-size:13px;max-width:24px;" /></a></td>
+                                                                                                            <td width="24" height="24" align="center" class="DMwhitetext" style="padding: 0 10px;" valign="top"><a href="https://www.facebook.com/profile.php?id=61566885321243" style="color: #ffffff; text-decoration: none;" target="_blank"><img alt="FB" height="24" src="https://image.email.thinkmarkets.com/lib/fe3411727364047f701073/m/1/622bf2ab-c248-4c61-b185-715602502384.png" style="border:none;display:block;outline:none;text-decoration:none;height:24px;font-size:13px;max-width:24px;" /></a></td>
+                                                                                                            <td width="24" height="24" align="center" class="DMwhitetext" style="padding: 0 10px;" valign="top"><a href="https://www.instagram.com/thinkcapitalcom/" style="color: #ffffff; text-decoration: none;" target="_blank"><img alt="Instagram" height="24" src="https://image.email.thinkmarkets.com/lib/fe3411727364047f701073/m/1/277228f8-4f2d-45ca-b767-7a2340d32421.png" style="border:none;display:block;outline:none;text-decoration:none;height:24px;font-size:13px;max-width:24px;" /></a></td>
+                                                                                                            <td width="24" height="24" align="center" class="DMwhitetext" style="padding: 0 10px;" valign="top"><a href="https://t.me/thinkcapitalcom" style="color: #ffffff; text-decoration: none;" target="_blank"><img alt="Telegram" height="24" src="https://image.email.thinkmarkets.com/lib/fe3411727364047f701073/m/1/8ba7b69d-a639-40f5-a850-285a43c2f120.png" style="border:none;display:block;outline:none;text-decoration:none;height:24px;font-size:13px;max-width:24px;" /></a></td>
+                                                                                                            <td width="24" height="24" align="center" class="DMwhitetext" style="padding: 0 10px;" valign="top"><a href="https://www.youtube.com/@thinkcapitalcom" style="color: #ffffff; text-decoration: none;" target="_blank"><img alt="YouTube" height="24" src="https://image.email.thinkmarkets.com/lib/fe3411727364047f701073/m/1/9a8e1848-2e96-48ca-8be5-7f4ca496f811.png" style="border:none;display:block;outline:none;text-decoration:none;height:24px;font-size:13px;max-width:24px;" /></a></td>
+                                                                                                            <td width="24" height="24" align="center" class="DMwhitetext" style="padding: 0 10px;" valign="top"><a href="https://discord.com/invite/GAapJj5yZf" style="color: #ffffff; text-decoration: none;" target="_blank"><img alt="Discord" height="24" src="https://image.email.thinkmarkets.com/lib/fe3411727364047f701073/m/1/eede5236-bc05-41b0-b361-789ecbd0a0e5.png" style="border:none;display:block;outline:none;text-decoration:none;height:24px;font-size:13px;max-width:24px;" /></a></td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="23" style="font-size:23px; line-height:23px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="center" style="font-size:0; padding: 0 40px;">
+                                                                                                    <table border="0" cellpadding="0" cellspacing="0" class="em_aside_0-10" style="min-width:100%;" width="100%">
+                                                                                                        <tr>
+                                                                                                            <td class="DMblockback" height="1" style="background-color: #a0abaf; font-size:1px; line-height:1px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="23" style="font-size:23px; line-height:23px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="center" class="em_aside" style="font-family: 'Inter', Arial, sans-serif; font-size:12px; line-height: 16px; font-weight: 400; color:#b9c6cb; padding: 0 40px;">&copy; ThinkCapital 2024. All rights reserved.</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="16" style="font-size:16px; line-height:16px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="left" class="em_aside" style="font-family: 'Inter', Arial, sans-serif; font-size:12px;line-height: 16px; font-weight: 400; color:#b9c6cb; padding: 0 40px;">Disclaimer: Our platform features sophisticated virtual demo accounts that precisely simulate current market conditions. Please note that the term ‘funded', as used in our website content and in any of our terms and conditions, exclusively refers to virtual funding. It is imperative to understand that our services do not constitute investment services or recommendations. Moreover, none of our personnel, including employees, staff, or representatives, are authorized to offer investment advice or recommendations. The content provided on our website is strictly for educational purposes, focusing on trading within financial markets. This content should not be interpreted as specific investment advice, a business recommendation, investment analysis, or any form of general recommendation in the trading of investment instruments.</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="16" style="font-size:16px; line-height:16px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="left" class="em_aside" style="font-family: 'Inter', Arial, sans-serif; font-size:12px;line-height: 16px; font-weight: 400; color:#a0abaf; padding: 0 40px;">To unsubscribe from this list, <a alias="Unsubscribe" href="%%unsub_center_url%%" style="color:#a0abaf;text-decoration:underline;" target="_blank">click here</a>.</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="40" style="font-size:40px; line-height:40px; padding:0px; margin:0px;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="20" style="font-size:20px; line-height:20px; padding:0px; margin:0px">&nbsp;</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                </td>
+                                            </tr>
+                        </table>
+            <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                    </tr>
+                </table>
+                <![endif]--></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
